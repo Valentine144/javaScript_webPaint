@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Web-Paint</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+</head>
+
+<body>
+	<div id="tools">
+		<div 	class="tool" 
+				id="Pipet" 
+				onclick="Instrument.Set('Pipet')">Pipet</div>
+		<div 	class="toolActive" 
+				id="Pen" 
+				onclick="Instrument.Set('Pen')">Pen</div>
+		<div 	class="tool" 
+				id="Brush" 
+				onclick="Instrument.Set('Brush')">Brush</div>
+		<div 	class="tool" 
+				id="Fill" 
+				onclick="Instrument.Set('Fill')">Fill</div>
+	</div>
+
+	<div id="palitra">
+		<div class="colorActive" id="black" onclick="setColor('black')"></div>
+		<div class="color" id="white" onclick="setColor('white')"></div>
+		<div class="color" id="red" onclick="setColor('red')"></div>
+		<div class="color" id="green" onclick="setColor('green')"></div>
+		<div class="color" id="blue" onclick="setColor('blue')"></div>
+		<div class="color" id="yellow" onclick="setColor('yellow')"></div>
+	</div>
+
+	<div id="art">
+		<div class="row">
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+		</div>
+		<div class="row">
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+		</div>
+		<div class="row">
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+		</div>
+		<div class="row">
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+		</div>
+		<div class="row">
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+		</div>
+		<div class="row">
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+		</div>
+		<div class="row">
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+		</div>
+		<div class="row">
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+			<div class="pixel" onclick="Touch(this)"></div>	
+		</div>
+	</div>
+
+</body>
+
+</html>
